@@ -61,15 +61,15 @@ To get a local copy of the project up and running, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/book-crud-app.git
-   cd book-crud-app
+   git clone https://github.com/SudeepMi/react-node-crud.git
+   cd react-node-crud
    ```
 
 2. Install frontend and backend dependencies:
 
    ```bash
    # Install backend dependencies
-   cd backend
+   cd server
    npm install
    
    # Install frontend dependencies
@@ -81,7 +81,7 @@ To get a local copy of the project up and running, follow these steps:
 
 1. Make sure MongoDB is running either locally or accessible remotely.
 
-2. Create a MongoDB database and configure connection settings in `backend/server.js`.
+2. Create a MongoDB database and configure connection settings in `backend/index.js`.
 
 ### Running the Application
 
@@ -91,7 +91,7 @@ To get a local copy of the project up and running, follow these steps:
    npm start
    ```
 
-   The server will run on `http://localhost:5000` by default.
+   The server will run on `http://localhost:3000` by default.
 
 2. Start the frontend development server (from `frontend` directory):
 
@@ -99,9 +99,9 @@ To get a local copy of the project up and running, follow these steps:
    npm start
    ```
 
-   The frontend will run on `http://localhost:3000` by default.
+   The frontend will run on `http://localhost:5173` by default.
 
-3. Open your browser and navigate to `http://localhost:3000` to view the application.
+3. Open your browser and navigate to `http://localhost:5173` to view the application.
 
 ## Usage
 
@@ -131,7 +131,3 @@ Contributions are welcome! Fork the repository, make your changes, and submit a 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-Replace `screenshot.png` with an actual screenshot of your application. This README file provides a structured guide for users and developers to understand and use your book CRUD application effectively. Adjust paths and instructions as necessary based on your project's folder structure and specific configurations.
