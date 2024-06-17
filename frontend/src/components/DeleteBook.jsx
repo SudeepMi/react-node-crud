@@ -8,13 +8,13 @@ const DeleteBook = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://app.test/books/${id}`)
+    axios.get(`http://localhost:3000/books/${id}`)
       .then(response => setBook(response.data))
       .catch(error => console.error('Error fetching book:', error));
   }, [id]);
 
   const handleDelete = () => {
-    axios.delete(`http://app.test/books/${id}`)
+    axios.delete(`http://localhost:3000/books/${id}`)
       .then(() => navigate('/'))
       .catch(error => console.error('Error deleting book:', error));
   };

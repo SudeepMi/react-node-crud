@@ -8,13 +8,13 @@ const DeleteGenre = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://app.test/genres/${id}`)
+    axios.get(`http://localhost:3000/genres/${id}`)
       .then(response => setGenre(response.data))
       .catch(error => console.error('Error fetching genre:', error));
   }, [id]);
 
   const handleDelete = () => {
-    axios.delete(`http://app.test/genres/${id}`)
+    axios.delete(`http://localhost:3000/genres/${id}`)
       .then(() => navigate('/genres'))
       .catch(error => console.error('Error deleting genre:', error));
   };

@@ -8,7 +8,7 @@ const AddGenre = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://app.test/genres', { name })
+    axios.post('http://localhost:3000/genres', { name })
       .then(() => navigate('/genres'))
       .catch(error => console.error('Error adding genre:', error));
   };

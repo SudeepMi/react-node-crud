@@ -8,14 +8,14 @@ const UpdateGenre = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://app.test/genres/${id}`)
+    axios.get(`http://localhost:3000/genres/${id}`)
       .then(response => setName(response.data.name))
       .catch(error => console.error('Error fetching genre:', error));
   }, [id]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://app.test/genres/${id}`, { name })
+    axios.put(`http://localhost:3000/genres/${id}`, { name })
       .then(() => navigate('/genres'))
       .catch(error => console.error('Error updating genre:', error));
   };
