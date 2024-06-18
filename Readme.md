@@ -1,6 +1,4 @@
-Creating a README file for a project that involves CRUD operations for books stored as BLOBs in a MongoDB database requires clear documentation to guide users and developers on how to set up, use, and understand the project. Below is an example of what your README file might look like:
 
----
 
 # Book CRUD Application with MongoDB
 
